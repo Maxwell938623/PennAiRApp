@@ -69,7 +69,7 @@ def find_bounds(hsv_background_color):
     return lower_bound, upper_bound
 
 # Define the input video file or camera
-input_video_path = 'video.mp4'
+input_video_path = 'PennAir 2024 App Dynamic.mp4'
 output_video_path = 'final.mp4'
 
 # Open the video capture

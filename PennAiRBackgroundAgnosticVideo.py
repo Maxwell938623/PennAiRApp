@@ -113,7 +113,7 @@ def getBounds(frame):
 
 
 # Define the input video file
-input_video_path = 'video2.mp4'
+input_video_path = 'PennAir 2024 App Dynamic Hard.mp4'
 output_video_path = 'final2.mp4'
 
 # Open the video capture

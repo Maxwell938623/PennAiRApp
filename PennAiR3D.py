@@ -167,7 +167,7 @@ def getBounds(frame):
 
 
 # Define the input video file
-input_video_path = 'video.mp4'
+input_video_path = 'PennAir 2024 App Dynamic.mp4'
 output_video_path = 'final3.mp4'
 
 real_radius = 10

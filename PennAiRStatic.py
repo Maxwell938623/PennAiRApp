@@ -69,7 +69,7 @@ def find_bounds(hsv_background_color):
     return lower_bound, upper_bound
 
 
-image = cv2.imread('image.png')
+image = cv2.imread('PennAir 2024 App Static.png')
 
 if image is None:
     quit()
