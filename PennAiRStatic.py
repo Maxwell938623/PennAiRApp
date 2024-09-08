@@ -89,7 +89,7 @@ def find_bounds(hsv_background_color):
     return lower_bound, upper_bound
 
 #Open the image to be masked
-image = cv2.imread('PennAir 2024 App Static.png')
+image = cv2.imread('Input/PennAir 2024 App Static.png')
 
 #If the image does not exist
 if image is None:

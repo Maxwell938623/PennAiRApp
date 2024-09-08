@@ -218,10 +218,10 @@ def getBounds(frame):
     return find_bounds(hsv_background_color)
 
 
-input_video_path = 'PennAir 2024 App Dynamic.mp4'
+input_video_path = 'Input/PennAir 2024 App Dynamic.mp4'
 output_video_path = 'Output/Output Part 4 (1).mp4'
 
-# input_video_path = 'PennAir 2024 App Dynamic Hard.mp4'
+# input_video_path = 'Input/PennAir 2024 App Dynamic Hard.mp4'
 # output_video_path = 'Output/Output Part 4 (2).mp4'
 
 #radius of the circle in inches
