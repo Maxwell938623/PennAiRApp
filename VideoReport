@@ -1,0 +1,5 @@
+Video Report:
+
+The algorithm performs relatively fast, and it is able to effectively detect the bounds of all the shapes throughout the video. By using cv2.imshow() to display each frame of the video, it is visually smooth and very fast.
+
+Although no significant adjustments were made from part 1, the code was slightly restructured for optimization. Since the background color is constant throughout the whole, the program uses the first frame of the video to calculate the lower and upper bounds, and then uses those same values throughout the whole video. This way, the lower and upper bounds do not have to be recalculated for every frame. Thus, for each frame, the program only has to mask the image, detect the contours, and label the significant contours, which is relatively fast.
