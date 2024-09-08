@@ -1,0 +1,27 @@
+Background Agnostic Report:
+
+The algorithm runs at the same speed as the previous part since the process for analyzing each frame of the video is exactly the same. The only difference is the formula for setting the bounds that are determined before the frames are analyzed.
+
+For brightly colored backgrounds, such as the grassy green background in the first video, it is sufficient to pick a lower and upper bound based on hue, saturation, and value. However, for especially dark and light backgrounds, the process is more difficult. Darker/lighter backgrounds can have any hue value, but the saturation and value cannot. For light backgrounds, both saturation and value need to be low. For darker backgrounds, the saturation needs to be low and value needs to be high. Therefore, I split the process for finding the lower and upper bound into three cases.
+
+
+The first case is for brightly colored backgrounds, for which it will run the standard background detection and bound algorithm as the code for the video in part 2.
+
+
+The second case is for light backgrounds, for which it will check for a low saturation and value. Then, the bounds are as such:
+
+lower_bound = np.array([0, 0, v_val + sensitivityDiff])
+upper_bound = np.array([179, 255, 255])
+
+This means that a pixel can have any hue or saturation value, but it has to have a reasonably greater value than the background in order for the pixel to be masked.
+
+
+The third case is for darker backgrounds, for which it will check for a low saturation and a high value. Then, the bounds are as such:
+
+lower_bound = np.array([0, 0, 0])
+upper_bound = np.array([179, 255, v_val - sensitivityDiff])
+
+This means that a pixel can have any hue or saturation value, but it has to have a reasonably lesser value than the background in order for the pixel to be masked.
+
+
+By applying this logic to the Background Agnostic video, it was able to properly detect all the shapes, showing how this algorithm for background agnostic detection is valid.
