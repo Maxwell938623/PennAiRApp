@@ -5,7 +5,7 @@ This is my application for Penn Aerial Robotics :D
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Output Files](#output)
+- [Output](#output)
 
 ## Installation
 
@@ -51,7 +51,7 @@ Here's how to use the project:
    
    "python file-name.py"
 
-## Output Files
+## Output
 
 (1) This is the output for running the file "PennAiRStatic.py": [See Image](https://drive.google.com/file/d/1dSmAv84tZT-NyWfUOVGatzry4_RtFvEa/view?usp=drive_link)
 
