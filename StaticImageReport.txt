@@ -1,0 +1,5 @@
+Static Image Report:
+
+My code first uses an extremely blurred version of the image to detect the background color. Then, based on the background color, the code generates a lower and upper bound of HSV values that it will use to mask out the background and leave the remaining shapes of a slightly blurred image (blurred images help make the coloration more even). Contours are then detected, and the centers and the coordinates of significant contours are marked on the output image.
+
+At first, it was slightly difficult to detect the light green shape, since it had a similar color to the background. However, my problem was that I was only looking at the hue values, and forgot to consider that saturation and value can drastically change the shade of a given color. Therefore to fix the problem, I included a range for hue, saturation, and value, which ended up allowing me to detect all the shapes.
