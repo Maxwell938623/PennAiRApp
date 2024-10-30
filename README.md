@@ -1,6 +1,6 @@
 # Penn Aerial Robotics Application
 
-This is my application for Penn Aerial Robotics :D
+This is my application for Penn Aerial Robotics :DD
 
 ## Table of Contents
 - [Installation](#installation)
