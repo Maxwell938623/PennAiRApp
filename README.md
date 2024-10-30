@@ -1,4 +1,4 @@
-# Penn Aerial Robotics Application
+# Penn Aerial Robotics Application - Object Detection
 
 This is my application for Penn Aerial Robotics :DD
 
